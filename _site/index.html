@@ -23,78 +23,241 @@
   />
 </div>
 <div class="header__container">
-  <button class="header__button">BROWSE BEATS</button>
+  <button class="header__button" onclick="scrollToElement('player')">
+    BROWSE BEATS
+  </button>
 </div>
 <div class="content__container">
+  <div class="content__header">
+    <p>FEATURED TRACK</p>
+  </div>
   <div class="content__featured">
-    <div class="content__header">
-      <p>FEATURED TRACK</p>
-    </div>
     <iframe
       src="//www.beatstars.com/embed/track/?id=12107531"
       width="100%"
       height="140"
+      frameborder="0"
     ></iframe>
   </div>
-  <div class="content__player">
-    <div class="content__header">
-      <p>STORE</p>
+  <div class="content__pricing">
+    <div>
+      <div class="pricing__card">
+        <div class="content__header">
+          <p>BASIC</p>
+        </div>
+        <div class="card__price">
+          <p><span>$</span>29.95</p>
+        </div>
+        <div class="card__list">
+          <ul>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              Untagged MP3
+            </li>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              Used for music recording
+            </li>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              Distribute up to 2000 copies
+            </li>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              500000 Online audio streams
+            </li>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              1 Music Video
+            </li>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              For profit live performances
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
+
+    <div>
+      <div class="pricing__card">
+        <div class="content__header">
+          <p>PREMIUM</p>
+        </div>
+        <div class="card__price">
+          <p><span>$</span>39.95</p>
+        </div>
+        <div class="card__list">
+          <ul>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              Untagged WAV and MP3
+            </li>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              Used for music recording
+            </li>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              Distribute up to 3000 copies
+            </li>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              600000 Online audio streams
+            </li>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              1 Music Video
+            </li>
+            <li>
+              <img
+                class="icon__check"
+                src="/assets/icons/check-circle-solid-24.png"
+                width="15px"
+                height="15px"
+              />
+              For profit live performances
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="pricing__card">
+        <div class="content__header">
+          <p>EXCLUSIVE</p>
+        </div>
+        <div class="banner__container">
+          <div class="card__banner">
+            <p>ARE YOU LOOKING FOR <span>EXCLUSIVE</span> LICENSES?</p>
+            <div class="card__button">
+              <button onclick="scrollToElement('contact')">CONTACT ME</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content__header">
+    <p>STORE</p>
+  </div>
+  <div class="content__player">
     <iframe
+      id="player"
       src="https://player.beatstars.com/?storeId=131569"
       width="100%"
       height="800"
+      frameborder="0"
       style="max-width: 100%"
     >
       -- none --
     </iframe>
   </div>
-  <div class="content__pricing">
-    <div>
-      <div class="content__header">
-        <p>BASIC</p>
-      </div>
-      <div class="pricing__card">
-        <div class="card__price"><p>$29.95</p></div>
-        <div class="card__list">
-          <ul>
-            <li>Untagged MP3</li>
-            <li>Distribute up to 2000 copies</li>
-            <li>500000 Online audio streams</li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
-    <div>
-      <div class="content__header">
-        <p>PREMIUM</p>
-      </div>
-      <div class="pricing__card">
-        <div class="card__price"><p>$39.95</p></div>
-        <div class="card__list">
-          <ul>
-            <li>Untagged WAV and MP3</li>
-            <li>Distribute up to 3000 copies</li>
-            <li>600000 Online audio streams</li>
-          </ul>
-        </div>
-      </div>
+  <div class="content__contact">
+    <div class="content__header">
+      <p>CONTACT ME</p>
     </div>
-
-    <div>
-      <div class="content__header">
-        <p>EXCLUSIVE</p>
-      </div>
-      <div class="pricing__card">
-        <div class="card__banner">
-          <p>ARE YOU LOOKING FOR <span>EXCLUSIVE</span> LICENSES?</p>
-        </div>
-        <div class="card__button"><button>CONTACT ME</button></div>
-      </div>
+    <div class="contact__container">
+      <form
+        class="contact__form"
+        id="contact"
+        action="POST"
+        data-netlify="true"
+      >
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Name"
+          class="contact__input"
+        />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Email"
+          class="contact__input"
+        />
+        <textarea
+          type="text"
+          name="message"
+          id="message"
+          placeholder="Message"
+          class="contact__input"
+        ></textarea>
+        <input type="submit" value="SEND MESSAGE" class="contact__button" />
+      </form>
     </div>
   </div>
 </div>
+
+<script>
+  function scrollToElement(id) {
+    const element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  }
+</script>
 
 </body>
 </html>
