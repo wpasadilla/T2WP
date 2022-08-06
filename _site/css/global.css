@@ -12,6 +12,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+p {
+  margin: 0;
+}
+
 .scanlines {
   width: 100%;
   height: 500px;
@@ -28,7 +32,8 @@ body {
   position: absolute;
   top: 0;
   z-index: -2;
-  width: 200%;
+  width: 100%;
+
   background-color: #ffffff;
   opacity: 0.3;
 }
@@ -42,7 +47,7 @@ body {
 }
 
 .header__logo {
-  width: 20%;
+  width: 50%;
   margin-top: 20px;
 }
 
@@ -70,8 +75,8 @@ body {
 }
 
 .content__container {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   border: solid 1px var(--primary-color);
   border-image: linear-gradient(
       0deg,
@@ -81,13 +86,14 @@ body {
     )
     1;
   background: black;
-  padding: 0px 5px 0 5px;
+  padding: 10px 10px 0 10px;
 }
 
 .content__featured {
 }
 
 .content__player {
+  height: 300px;
 }
 
 .content__contact {
@@ -158,6 +164,7 @@ body {
   color: white;
   height: 30px;
   width: 100%;
+  margin-top: 10px;
 }
 .content__header p {
   font-size: 24px;
@@ -243,6 +250,8 @@ body {
   width: 100%;
   text-align: center;
   font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .card__price span {
@@ -255,9 +264,9 @@ body {
 
 .card__list {
   color: white;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
 }
 
 .card__list ul {
@@ -270,23 +279,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .header__logo {
-    width: 50%;
-  }
-  .content__container {
-    margin-left: 5px;
-    margin-right: 5px;
-
-    padding: 0 10px 0 10px;
-  }
-
-  .content__player {
-    height: 300px;
-  }
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .header__logo {
@@ -297,7 +289,7 @@ body {
     margin-left: 10px;
     margin-right: 10px;
 
-    padding: 0px 10px 0 10px;
+    padding: 10px 10px 0 10px;
   }
 
   .main__background {
@@ -325,7 +317,7 @@ body {
     margin-left: 50px;
     margin-right: 50px;
 
-    padding: 0px 20px 0 20px;
+    padding: 20px 20px 0 20px;
   }
 
   .header__button {
@@ -352,11 +344,16 @@ body {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
   }
+
+  .card__list {
+    font-size: 15px;
+  }
+
   .content__container {
     margin-left: 100px;
     margin-right: 100px;
 
-    padding: 0px 10px 0 10px;
+    padding: 10px 10px 0 10px;
   }
   .card__banner p {
     font-size: 20px;
@@ -372,6 +369,10 @@ body {
   .pricing__card {
     height: 500px;
   }
+
+  .contact__form {
+    padding: 100px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -380,7 +381,7 @@ body {
     margin-left: 200px;
     margin-right: 200px;
 
-    padding: 0px 50px 0 50px;
+    padding: 20px 20px 0 20px;
   }
 
   .card__banner p {
@@ -392,6 +393,31 @@ body {
   .card__banner span {
     color: var(--primary-color);
     font-size: 50px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+  .content__container {
+    margin-left: 300px;
+    margin-right: 300px;
+
+    padding: 20px 20px 0 20px;
+  }
+
+  .card__banner p {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .card__banner span {
+    color: var(--primary-color);
+    font-size: 50px;
+  }
+
+  .contact__form {
+    padding: 200px;
   }
 }
 
